@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="soya.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Soya Milk</title>
+</head>
+<body>
+  <section>
+    <img src="wall.png" id="wall">
+    <img src="bottle.png" id="bottle">
+    <h2 id="text">Soya Bean</h2>
+  </section>
+  <div class="about-content">
+    <h1>Kacang Kedelai</h1>
+    <p>
+      <b>Kedelai, atau kacang kedelai, adalah salah satu tanaman jenis polong-polongan 
+      yang menjadi bahan dasar banyak makanan dari Asia Timur seperti susu, kecap, tahu, dan tempe. 
+      Berdasarkan peninggalan arkeologi, tanaman ini telah dibudidayakan sejak 3500 tahun yang lalu 
+      di Asia Timur. Kedelai merupakan sumber utama protein nabati dan minyak nabati dunia. 
+      Penghasil kedelai utama dunia adalah Amerika Serikat meskipun kedelai praktis baru dibudidayakan 
+      masyarakat di luar Asia setelah 1910.</b>
+    </p>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="https://cdn-brilio-net.akamaized.net/news/2021/05/07/205493/1469238-10-makanan-yang-terbuat-dari-kedelai.jpg" alt="Tahu">
+        <h3>Tahu</h3>
+        <p>
+          Tahu berasal dari Tiongkok, seperti halnya kecap, tauco, 
+          bakpau, dan bakso. Nama "tahu" merupakan serapan dari bahasa Hokkian (tauhu) 
+          (Hanzi: 豆腐, hanyu pinyin: doufu), yang secara harfiah berarti 
+          "kedelai terfermentasi". Tahu telah dikenal di Tiongkok sejak zaman dinasti 
+          Han sekitar 2200 tahun lalu. Penemunya adalah Liu An (Hanzi: 劉安) yang 
+          merupakan seorang bangsawan, cucu dari Kaisar Han Gaozu, Liu Bang yang 
+          mendirikan dinasti Han. <br><br>
+          Versi tahu yang dikenal di Jepang adalah tahu sutra (絹漉し豆腐, kinugoshi tōfu). 
+          Tahu sutra lebih lunak dan kurang tahan terhadap pengolahan lebih lanjut, 
+          sehingga biasanya dikonsumsi mentah. Tahu secara umum dibawa para perantau 
+          Cina ke seluruh penjuru dunia sehingga menyebar ke Asia Timur dan Asia Tenggara, 
+          lalu juga akhirnya ke seluruh dunia.
+        </p>
+      </div>
+      <div class="grid-item">
+        <img src="https://cdn-brilio-net.akamaized.net/news/2021/05/07/205493/1469239-10-makanan-yang-terbuat-dari-kedelai.jpg" alt="Kecap">
+        <h3>Kecap</h3>
+        <p>
+          Bumbu dapur atau penyedap makanan yang berupa cairan berwarna hitam yang 
+          rasanya manis atau asin. Bahan dasar pembuatan kecap umumnya adalah kedelai 
+          atau kedelai hitam. Namun ada pula kecap yang dibuat dari bahan dasar air 
+          kelapa yang umumnya berasa asin. <br><br>
+          <span>Kecap manis biasanya bertekstur kental dan terbuat dari kedelai, sementara 
+          kecap asin bertekstur lebih cair dan terbuat dari kedelai dengan komposisi 
+          garam yang lebih banyak, atau bahkan ikan laut. Selain berbahan dasar kedelai 
+          atau kedelai hitam bahkan air kelapa, kecap juga dapat dibuat dari ampas padat 
+          dari pembuatan tahu.</span><br><br>
+          Selain itu masih banyak variasi kecap lainnya di berbagai negara, misalnya 
+          shoyu di Jepang, dan ganjang di Korea.
+        </p>
+      </div>
+      <div class="grid-item">
+        <img src="https://cdn-brilio-net.akamaized.net/news/2021/05/07/205493/1469245-10-makanan-yang-terbuat-dari-kedelai.jpg" alt="Susu Kedelai">
+        <h3>Susu Kedelai</h3>
+        <p>
+          Sari kedelai atau susu kedelai adalah minuman susu nabati yang dibuat dari 
+          kedelai. Sari kedelai disebut susu karena minuman ini berwarna putih kekuningan 
+          mirip dengan susu. Sari kedelai sebenarnya merupakan produk samping alami dari 
+          pembuatan tahu. <br><br>
+          Sari kedelai dapat dijadikan sebagai pengganti susu bagi orang 
+          yang memiliki kondisi intoleransi laktosa, vegan, atau mempunyai alasan kesehatan 
+          dan lingkungan tersendiri. Minuman ini dibuat pertama kali di Tiongkok dan 
+          dikenal dengan nama doujiang. Sejak abad ke-19, sari kedelai lazim dihidangkan 
+          sebagai sarapan pagi bersama dengan penganan lainnya seperti cakwe.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    let wall = document.getElementById('wall');
+    let bottle = document.getElementById('bottle');
+
+    window.addEventListener('scroll', function(){
+      var value = window.scrollY;
+
+      wall.style.top = value * 0.5 + 'px';
+      bottle.style.top = value * 0.15 + 'px';
+      text.style.top = value * 1 + 'px';
+    })
+  </script>
+</body>
+</html>
