@@ -24,6 +24,9 @@
       Penghasil kedelai utama dunia adalah Amerika Serikat meskipun kedelai praktis baru dibudidayakan 
       masyarakat di luar Asia setelah 1910.</b>
     </p>
+
+    <h3>Berikut adalah beberapa hasil olahan dari kacang kedelai</h3>
+
     <div class="grid-container">
       <div class="grid-item">
         <img src="https://cdn-brilio-net.akamaized.net/news/2021/05/07/205493/1469238-10-makanan-yang-terbuat-dari-kedelai.jpg" alt="Tahu">
@@ -76,6 +79,24 @@
         </p>
       </div>
     </div>
+    <div class="about-video">
+      <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="1080">
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center;">
+          Video courtesy of 
+          <a href="https://www.youtube.com/watch?v=9buhsTTdrAQ" target="_blank">
+            MyPassion Fruits Journey
+          </a>.
+        </p>
+      </div>
+    </div>
   </div>
   <script type="text/javascript">
     let wall = document.getElementById('wall');
@@ -87,7 +108,28 @@
       wall.style.top = value * 0.5 + 'px';
       bottle.style.top = value * 0.15 + 'px';
       text.style.top = value * 1 + 'px';
-    })
+    });
+
+    var myVideo = document.getElementById("video1"); 
+
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+
+    function makeBig() { 
+        myVideo.width = 1500; 
+    } 
+
+    function makeSmall() { 
+        myVideo.width = 720; 
+    } 
+
+    function makeNormal() { 
+        myVideo.width = 1080; 
+    } 
   </script>
 </body>
 </html>
